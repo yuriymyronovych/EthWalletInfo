@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EthWalletInfo</string>
+    <string name="account_balance">Account Balance</string>
+    <string name="ETH">ETH</string>
+    <string name="erc_20_balance">ERC-20 Balance</string>
+    <string name="swipe_down_to_refresh">swipe down to refresh</string>
+    <string name="an_error_occured">an error occured</string>
+    <string name="network_connection_problem">network connection problem</string>
+    <string name="view_more">view more</string>
+    <string name="erc_20_tokens">ERC-20 Tokens</string>
+    <string name="golem_gnt">Golem (GNT)</string>
+    <string name="augur_rep">Augur (REP)</string>
+    <string name="omnisego_omg">OmniseGo (OMG)</string>
+</resources>
