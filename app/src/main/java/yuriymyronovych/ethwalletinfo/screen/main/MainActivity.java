@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.math.BigDecimal;
 
@@ -63,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
 
         ViewUtils.formatEthPrice(tvAccountBalance, accountBalanceEth);
         ViewUtils.formatEthPrice(tvTokenBalance, tokenBalanceEth);
+
+        if (tokenBalanceEth.doubleValue() == -1) {
+            Toast.makeText(this, R.string.shape_shift_broken, Toast.LENGTH_LONG).show();
+        }
     }
 
     private void notifyError(Throwable error) {

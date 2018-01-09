@@ -42,6 +42,10 @@ public class MainActivityPresenter {
                 shapeShiftService.getMarketInfo(Constants.PAIR_OMG_ETH),
 
                 (gnt, rep, omg, gntPrice, repPrice, omgPrice) -> {
+                    if (gntPrice.getRate().doubleValue() == 0) { //shapeshift is not working?
+                        return new BigDecimal(-1);
+                    }
+
                     BigDecimal gntEth = Utils.weiToEth(gnt.getResult()).multiply(gntPrice.getRate());
                     BigDecimal repEth = Utils.weiToEth(rep.getResult()).multiply(repPrice.getRate());
                     BigDecimal omgEth = Utils.weiToEth(omg.getResult()).multiply(omgPrice.getRate());

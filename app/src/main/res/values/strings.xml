@@ -11,4 +11,5 @@
     <string name="golem_gnt">Golem (GNT)</string>
     <string name="augur_rep">Augur (REP)</string>
     <string name="omnisego_omg">OmniseGo (OMG)</string>
+    <string name="shape_shift_broken">Shapeshift API seems broken, please try again later</string>
 </resources>
