@@ -54,8 +54,8 @@ public class DetailsActivity extends AppCompatActivity {
     private void onDataLoaded(DetailsInfoModel info) {
         swipeRefreshLayout.setRefreshing(false);
         ViewUtils.formatTokenNumber(tvGntNumber, info.getGntNumber());
-        ViewUtils.formatTokenNumber(tvRepNumber, info.getGntNumber());
-        ViewUtils.formatTokenNumber(tvOmgNumber, info.getGntNumber());
+        ViewUtils.formatTokenNumber(tvRepNumber, info.getRepNumber());
+        ViewUtils.formatTokenNumber(tvOmgNumber, info.getOmgNumber());
 
         ViewUtils.formatEthPrice(tvGntEth, info.getGntEth());
         ViewUtils.formatEthPrice(tvRepEth, info.getRepEth());
